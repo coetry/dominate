@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>clipboard</title>
+<style>
+  body {
+    font-family: monospace;
+    font-size: 20px;
+  }
+</style>
+</head>
+<body>
+  <p>this is some text</p>
+  <script type="text/javascript">
+    const p = document.querySelector('p')
+    console.log(p)
+    p.addEventListener('select', event => {
+      console.log(event)
+    })
+  </script>
+</body>
+</html>
